@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* OKLCH Theme Custom Utility Variables */
+:root {
+  --color-purple-50: oklch(0.97 0.02 290);
+  --color-purple-100: oklch(0.93 0.04 290);
+  --color-purple-200: oklch(0.87 0.08 290);
+  --color-purple-300: oklch(0.77 0.13 290);
+  --color-purple-450: oklch(0.62 0.20 290);
+  --color-purple-500: oklch(0.57 0.22 290);
+  --color-purple-600: oklch(0.48 0.22 290);
+  --color-purple-700: oklch(0.39 0.19 290);
+  --color-purple-800: oklch(0.31 0.15 290);
+  --color-purple-900: oklch(0.24 0.12 290);
+  --color-purple-950: oklch(0.16 0.08 290);
+  --color-purple-650: oklch(0.43 0.20 290);
+  --color-purple-150: oklch(0.90 0.06 290);
+  --color-purple-155: oklch(0.88 0.07 290);
+}
+
+.theme-lavanda {
+  --color-purple-50: oklch(0.97 0.02 290);
+  --color-purple-100: oklch(0.93 0.04 290);
+  --color-purple-200: oklch(0.87 0.08 290);
+  --color-purple-300: oklch(0.77 0.13 290);
+  --color-purple-450: oklch(0.62 0.20 290);
+  --color-purple-500: oklch(0.57 0.22 290);
+  --color-purple-600: oklch(0.48 0.22 290);
+  --color-purple-700: oklch(0.39 0.19 290);
+  --color-purple-800: oklch(0.31 0.15 290);
+  --color-purple-900: oklch(0.24 0.12 290);
+  --color-purple-950: oklch(0.16 0.08 290);
+  --color-purple-650: oklch(0.43 0.20 290);
+  --color-purple-150: oklch(0.90 0.06 290);
+  --color-purple-155: oklch(0.88 0.07 290);
+}
+
+.theme-menta {
+  --color-purple-50: oklch(0.98 0.01 160);
+  --color-purple-100: oklch(0.95 0.03 160);
+  --color-purple-200: oklch(0.89 0.07 160);
+  --color-purple-300: oklch(0.79 0.11 160);
+  --color-purple-450: oklch(0.63 0.16 160);
+  --color-purple-500: oklch(0.58 0.18 160);
+  --color-purple-600: oklch(0.48 0.17 160);
+  --color-purple-700: oklch(0.38 0.14 160);
+  --color-purple-800: oklch(0.30 0.11 160);
+  --color-purple-900: oklch(0.23 0.09 160);
+  --color-purple-950: oklch(0.15 0.06 160);
+  --color-purple-650: oklch(0.43 0.15 160);
+  --color-purple-150: oklch(0.91 0.05 160);
+  --color-purple-155: oklch(0.89 0.06 160);
+}
+
+.theme-coral {
+  --color-purple-50: oklch(0.98 0.02 45);
+  --color-purple-100: oklch(0.95 0.04 45);
+  --color-purple-200: oklch(0.89 0.08 45);
+  --color-purple-300: oklch(0.79 0.13 45);
+  --color-purple-450: oklch(0.63 0.20 45);
+  --color-purple-500: oklch(0.58 0.22 45);
+  --color-purple-600: oklch(0.48 0.21 45);
+  --color-purple-700: oklch(0.38 0.18 45);
+  --color-purple-800: oklch(0.30 0.14 45);
+  --color-purple-900: oklch(0.23 0.11 45);
+  --color-purple-950: oklch(0.15 0.08 45);
+  --color-purple-650: oklch(0.43 0.20 45);
+  --color-purple-150: oklch(0.91 0.06 45);
+  --color-purple-155: oklch(0.89 0.07 45);
+}
+
+.theme-indigo {
+  --color-purple-50: oklch(0.97 0.02 260);
+  --color-purple-100: oklch(0.93 0.04 260);
+  --color-purple-200: oklch(0.87 0.08 260);
+  --color-purple-300: oklch(0.77 0.13 260);
+  --color-purple-450: oklch(0.62 0.20 260);
+  --color-purple-500: oklch(0.57 0.22 260);
+  --color-purple-600: oklch(0.48 0.22 260);
+  --color-purple-700: oklch(0.39 0.19 260);
+  --color-purple-800: oklch(0.31 0.15 260);
+  --color-purple-900: oklch(0.24 0.12 260);
+  --color-purple-950: oklch(0.16 0.08 260);
+  --color-purple-650: oklch(0.43 0.20 260);
+  --color-purple-150: oklch(0.90 0.06 260);
+  --color-purple-155: oklch(0.88 0.07 260);
+}
+
+/* Custom micro-animations */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideRight {
+  animation: slideRight 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.truncate-2-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+

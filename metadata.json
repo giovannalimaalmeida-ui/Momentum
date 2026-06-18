@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Momentum",
+  "description": "Um aplicativo de produtividade avançado para combater a procrastinação, organizar tarefas, monitorar sessões Pomodoro com regras de foco estritas e receber insights de IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
